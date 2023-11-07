@@ -1,0 +1,36 @@
+// Settings
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-title {
+    margin-top: 100px;
+    font-size: 60px;
+}
+
+// Components
+@import './components/allies';
+@import './components/cards';
+@import './components/footer';
+@import './components/heroSection';
+@import './components/navbar';
+@import './components/team';
+@import './components/colombianMap';
+@import './components/modal';
+
+// Pages
+@import './pages/home';
+@import './pages/agro';
+@import './pages/tech';
+@import './pages/loading';
