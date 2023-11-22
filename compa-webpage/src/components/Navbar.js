@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { AiOutlineMenu } from 'react-icons/ai';
 
-function Navbar({ path }) {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+function Navbar() {
+  const [openMenu, setOpenMenu] = useState(true);
+  console.log(openMenu);
 
   const storeScroll = () => {
+    console.log(window.scrollY)
     document.documentElement.dataset.scroll = window.scrollY;
   };
-
-  const outOfHome = path !== '/'
-
-  const navbarStyle = outOfHome ? {
-    backgroundColor: '#252525',
-    boxShadow: '0 0 .5em rgba(0, 0, 0, .5)'
-  } : {}
 
   // Listen for new scroll events
   document.addEventListener('scroll', storeScroll);
@@ -24,64 +17,41 @@ function Navbar({ path }) {
   // Update scroll position for first time
   storeScroll();
 
+  useEffect(() => {
+    if (storeScroll === 0) {
+      setOpenMenu(true)
+    } else { setOpenMenu(false) }
+    console.log(storeScroll)
+    console.log(openMenu)
+    
+  }, window.scrollY);
+
 
   return (
     <>
-      <div className='background-navbar'>
-        <nav className='navbar' style={navbarStyle}>
-          <div className='navbar-container'>
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu} style={outOfHome ? { display: 'flex' } : {}}>
-              <img className='title-logo'
-                alt='Travel Image'
-                src='/images/compa negro.png'
-                style={outOfHome ? { display: 'block' } : {}}
-              />
-              {/* COMPA */}
-            </Link>
-            <div className='menu-icon' onClick={handleClick}>
-              <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-            </div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'} style={outOfHome ? { justifyContent: 'end' } : {}}>
-              <li className='nav-item'>
-                <Link
-                  to='/agro'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                  Agro
-                </Link>
-              </li>
-              <li className='nav-item'>
-                <Link
-                  to='/tech'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                  Tecnología
-                </Link>
-              </li>
-              <li className='nav-item'>
-                <Link
-                  to='/edu'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                  Educación
-                </Link>
-              </li>
-              <li className='nav-item'>
-                <Link
-                  to='/mercado'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                  Mercado
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav>
+        <Link to='/' className='navbar-logo'>
+          <img className='title-logo'
+            alt='Compa logo'
+            src='/images/compa negro.png'
+          />
+          <img className='title-logo-small'
+            alt='Compa logo'
+            src='/images/logo-small.png'
+          />
+        </Link>
+        <div className='menu-section' onClick={() => setOpenMenu(!openMenu)}>
+          {openMenu ?
+          <ul>
+            <li> <Link to='/agro' > Agro </Link> </li>
+            <li> <Link to='/tech' > Tecnología </Link> </li>
+            <li> <Link to='/edu' > Educación </Link> </li>
+            <li> <Link to='/mercado' > Mercado </Link> </li>
+          </ul> :
+          <AiOutlineMenu className='AiOutlineMenu' />
+          }
+        </div>
+      </nav>
     </>
   );
 }
