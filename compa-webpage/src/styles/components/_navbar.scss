@@ -33,6 +33,7 @@ nav {
   flex-direction: row;
   align-items: center;
   width: auto;
+  transition: transform .2s;
 }
 
 .menu-section ul li {
@@ -42,6 +43,10 @@ nav {
 .menu-section a {
   text-decoration: none;
   color: black;
+}
+
+.menu-section ul li:hover {
+  transform: scale(1.1);
 }
 
 .AiOutlineMenu {

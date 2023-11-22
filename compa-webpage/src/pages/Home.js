@@ -2,12 +2,12 @@ import React from 'react';
 import Cards from '../components/Cards';
 import Team from '../components/Team';
 import Allies from '../components/Allies';
-import HeroSection from '../components/HeroSection';
+import Title from '../components/Title';
 
 function Home() {
   return (
     <>
-      <HeroSection />
+      <Title />
       <Cards />
       {/* <Team /> */}
       <Allies />
