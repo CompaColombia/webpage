@@ -3,8 +3,11 @@ import React from 'react';
 function Title() {
   return (
     <div className='title'>
-      <h1>Hola Compa</h1>
-      <p>¿Listo para transformar el agro colombiano?</p>
+      <h1>Sé Compa del campo</h1>
+      <p>Desarrollamos soluciones tecnológicas para</p>
+      <div>
+        <p>Propagación!</p>
+      </div>
     </div>
   );
 }

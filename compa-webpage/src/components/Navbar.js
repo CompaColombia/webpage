@@ -4,10 +4,8 @@ import { AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(true);
-  console.log(openMenu);
 
   const storeScroll = () => {
-    console.log(window.scrollY)
     document.documentElement.dataset.scroll = window.scrollY;
   };
 
@@ -21,10 +19,8 @@ function Navbar() {
     if (storeScroll === 0) {
       setOpenMenu(true)
     } else { setOpenMenu(false) }
-    console.log(storeScroll)
-    console.log(openMenu)
     
-  }, window.scrollY);
+  }, [window.scrollY]);
 
 
   return (
