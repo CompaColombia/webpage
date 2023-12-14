@@ -1,0 +1,41 @@
+.aboutUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 80px;
+
+  h2 {
+    font-size: 60px;
+    width: 20%;
+    text-align: start;
+    line-height: 50px;
+  }
+
+  .right {
+    width: 50%;
+
+    p {
+      text-align: start;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  
+    button {
+      font-size: 20px;
+      color: black;
+      background: #52D766;
+      padding: 15px;
+      width: 250px;
+      border-radius: 25px;
+      border: none;
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+
+}

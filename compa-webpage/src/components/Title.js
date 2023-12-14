@@ -1,10 +1,14 @@
+import Download from './Download'
+
 function Title() {
   return (
     <div className='title' id='home'>
-      <h1>Sé Compa del campo</h1>
-      <p>Desarrollamos soluciones tecnológicas para</p>
+      <p>
+        <b>Desarrollamos soluciones tecnológicas para <br/><span>propagación</span></b>
+      </p>
       <div>
-        <p>Propagación!</p>
+        <h1>Sé <span>Compa</span> del campo</h1>
+        {/* <Download /> */}
       </div>
     </div>
   );
