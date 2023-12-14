@@ -19,7 +19,7 @@ function Navbar() {
     if (storeScroll === 0) {
       setOpenMenu(true)
     } else { setOpenMenu(false) }
-    
+
   }, [window.scrollY]);
 
 
@@ -38,13 +38,12 @@ function Navbar() {
         </Link>
         <div className='menu-section' onClick={() => setOpenMenu(!openMenu)}>
           {openMenu ?
-          <ul>
-            <li> <Link to='/agro' > Agro </Link> </li>
-            <li> <Link to='/tech' > Tecnología </Link> </li>
-            <li> <Link to='/edu' > Educación </Link> </li>
-            <li> <Link to='/mercado' > Mercado </Link> </li>
-          </ul> :
-          <AiOutlineMenu className='AiOutlineMenu' />
+            <ul>
+              <li> <a href='#footer' > Proyectos </a> </li>
+              <li> <a href='#footer' > Servicios </a> </li>
+              <li> <a href='#footer' > Contacto </a> </li>
+            </ul> :
+            <AiOutlineMenu className='AiOutlineMenu' />
           }
         </div>
       </nav>

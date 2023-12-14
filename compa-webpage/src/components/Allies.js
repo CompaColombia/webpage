@@ -1,15 +1,8 @@
-import React from 'react';
-import { Pagination } from "swiper";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import Carousel from "./Carousel";
 
 function Allies() {
 
-  const array = [ 
+  const array = [
     {
       img: 'arroyave.png',
       link: 'https://semillasarroyave.com/'
@@ -32,29 +25,13 @@ function Allies() {
     },
   ]
 
+  const items = [1, 2, 3, 4, 5];
+
   return (
-    <div className='allies'>
-      <h1>Los compas de Compa</h1>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="myswiper"
-      >
-        {array.map((item, key) => {
-          return <SwiperSlide key={key} >
-            <a href={item.link} target="_blank">
-            <img 
-              alt={`logo de ${item.img}`}
-              src={`allies/${item.img}`}  
-            />
-            </a>
-          </SwiperSlide>
-        })}
-      </Swiper>
+    <div className="allies">
+      <h3>Los compas de compa</h3>
+      <p>Sabemos que para llegar lejos debemos estar acompañados de los mejores, te presentamos a nuestros aliados y clientes.</p>
+      <Carousel items={items}/>
     </div>
   );
 }

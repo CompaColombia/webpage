@@ -1,0 +1,40 @@
+.contact {
+    background-color: #52D766;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8% 15%;
+
+    div {
+        margin: 30px;
+    }
+
+    h2 {
+        font-size: 60px;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        line-height: 50px;
+    }
+
+    p {
+        font-size: 30px;
+        color: white;
+    }
+
+    button {
+        margin-top: 20px;
+        color: black;
+        background: transparent;
+        padding: 15px;
+        width: 150px;
+        border-radius: 25px;
+        border: solid 1px black;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

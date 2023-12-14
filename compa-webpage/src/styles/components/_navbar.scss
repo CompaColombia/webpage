@@ -26,27 +26,28 @@ nav {
   background-color: #52D766;
   padding: 15px;
   border-radius: 25px;
-}
 
-.menu-section ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: auto;
-  transition: transform .2s;
-}
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    transition: transform .2s;
+  }
 
-.menu-section ul li {
-  margin: 0 20px;
-}
+  ul li {
+    cursor: pointer;
+    margin: 0 20px;
+  }
 
-.menu-section a {
-  text-decoration: none;
-  color: black;
-}
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-.menu-section ul li:hover {
-  transform: scale(1.1);
+  ul li:hover {
+    text-decoration: underline;
+  }
 }
 
 .AiOutlineMenu {
