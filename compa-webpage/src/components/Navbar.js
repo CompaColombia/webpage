@@ -39,7 +39,7 @@ function Navbar() {
         <div className='menu-section' onClick={() => setOpenMenu(!openMenu)}>
           {openMenu ?
             <ul>
-              <li> <a href='#footer' > Proyectos </a> </li>
+              <li> <a href='#footer' > Productos y proyectos </a> </li>
               <li> <a href='#footer' > Servicios </a> </li>
               <li> <a href='#footer' > Contacto </a> </li>
             </ul> :

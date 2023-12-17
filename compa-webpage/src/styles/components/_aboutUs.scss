@@ -1,39 +1,46 @@
 .aboutUs {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-bottom: 80px;
-
-  h2 {
-    font-size: 60px;
-    width: 20%;
-    text-align: start;
-    line-height: 50px;
-  }
-
-  .right {
-    width: 50%;
+  margin: 0 12%;
+  margin-bottom: 150px;
+  
+  .top {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: space-between;
+    align-items: center;
+    
+    h2 {
+      font-size: 80px;
+      width: 30%;
+      text-align: start;
+      line-height: 90px;
+    }
 
     p {
-      text-align: start;
-      font-size: 20px;
-      margin-bottom: 30px;
+      width: 60%;
+      text-align: justify;
+      font-size: 25px;
     }
   
-    button {
-      font-size: 20px;
-      color: black;
-      background: #52D766;
-      padding: 15px;
-      width: 250px;
-      border-radius: 25px;
-      border: none;
-  
-      &:hover {
-        cursor: pointer;
-      }
+  }
+
+  button {
+    margin-top: 60px;
+    box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    font-size: 20px;
+    color: black;
+    background: #52D766;
+    padding: 15px;
+    width: 250px;
+    border-radius: 25px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
     }
   }
 

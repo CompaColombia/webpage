@@ -2,27 +2,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-bottom: 80px;
+  
 
   .top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    margin-bottom: 30px;
+    align-items: flex-start;
+    width: 80%;
+    margin-left: 12%;
+    margin-bottom: 60px;
 
     p {
       text-align: start;
-      font-size: 60px;
-      width: 50%;
+      font-size: 80px;
+      width: 80%;
       padding: 0;
       margin: 0;
-      line-height: 50px;
+      line-height: 90px;
     }
 
     button {
+      box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
       font-size: 20px;
       color: black;
       background: #52D766;
@@ -30,7 +33,7 @@
       width: 250px;
       border-radius: 25px;
       border: none;
-
+      margin-top: 20px;
       &:hover {
         cursor: pointer;
       }
@@ -45,25 +48,27 @@
     width: 100%;
 
     ul {
+      box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      background-color: white;
+      transform: translate(200px, 0);;
       right: 20px;
-      border: 1px solid black;
       border-radius: 15px;
-      padding: 30px;
-      width: 30%;
+      padding: 60px;
+      width: 90%;
 
-      h3 {
-        font-size: 25px;
+      .machine-title {
+        font-size: 30px;
       }
 
       li {
-        margin: 10px;
+        margin: 50px 10px;
         cursor: pointer;
       }
     }
 
     .images-section {
-      width: 50%;
-      height: 50vh;
+      width: 130%;
+      height: 100vh;
       
       img {
         border-radius: 25px 0 0 25px;

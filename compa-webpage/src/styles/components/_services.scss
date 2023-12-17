@@ -3,28 +3,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 12%;
+  // margin-bottom: 10px;
 
   .top {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 80%;
-
+    text-align: right;
+    justify-content: space-between;
+    align-items: center;
+    
     h2 {
-      text-align: center;
-      font-size: 60px;
+      font-size: 80px;
       width: 30%;
-      padding: 0;
-      margin: 0;
-      line-height: 50px;
+      text-align: start;
+      line-height: 90px;
     }
 
     p {
-      place-self: center;
-      width: 50%;
-      font-size: 20px;
-      color: black;
+      width: 60%;
+      text-align: justify;
+      font-size: 25px;
     }
+  
   }
 
   .cards {
@@ -33,24 +34,31 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: transparent;
 
     .card {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
 
       height: 100%;
-      min-height: 250px;
-      padding: 2%;
+      height: 450px;
+      padding: 4% 5%;
       text-align: center;
 
-      border: #52D766 2px solid;
+      // border: #52D766 2px solid;
+      box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
       border-radius: 15px;
       flex: 0 0 auto;
       width: 20vw;
       background: white;
       margin: 20px;
+
+      h2 {
+        // color: rgb(82, 215, 102, 0.1);
+        margin-bottom: 15%;
+      }
 
       p {
         text-align: justify;

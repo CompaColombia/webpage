@@ -2,8 +2,8 @@ function AboutUs() {
 
   return (
     <section className="aboutUs">
-      <h2>Sobre Nosotros</h2>
-      <div className="right">
+      <div className="top">
+        <h2>Sobre Nosotros</h2>
         <p>
           En Compa contamos con un equipo enfocado en el desarrollo tecnológico y
           la construcción de soluciones creativas para el sector floricultor, horticultor
@@ -11,8 +11,8 @@ function AboutUs() {
           aliados y clientes para elaborar valiosas innovaciones en cada uno de los
           procesos adaptados a sus necesidades.
         </p>
-        <button>Descubre más</button>
       </div>
+      <button>Descubre más</button>
     </section>
   );
 }

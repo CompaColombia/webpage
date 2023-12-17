@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 function Projects() {
 
   const [itemSelected, setItemSelected] = useState(0)
@@ -31,14 +30,14 @@ function Projects() {
   return (
     <section className="projects">
       <div className="top">
-        <p>Nuestros productos y proyectos</p>
+        <p><b>Nuestros productos <br />y proyectos</b></p>
         <button>Ver todos</button>
       </div>
       <div className="bottom">
         <ul>
           {items?.map((item, key) => (
             <li onClick={() => setItemSelected(key)} key={key}>
-              <h3>{item.title}</h3>
+              <p className="machine-title" style={key === itemSelected ? {"color": "black"} : {"color": "lightgrey"}}>{item.title}</p>
               {key === itemSelected ? <p>{item.text}</p> : "" }
             </li>
           ))}
