@@ -13,6 +13,8 @@ function AboutUs() {
         </p>
       </div>
       <button>Descubre más</button>
+
+
     </section>
   );
 }

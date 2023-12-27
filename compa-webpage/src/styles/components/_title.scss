@@ -27,6 +27,33 @@
       text-decoration: underline #52D766;
     }
   }
+  
+  .texto {
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido al inicio del cuerpo (izquierda) */
+    justify-content: center;
+    background-color: #fff; /* Fondo blanco para la pantalla */
+  }
+  
+  .contenedor-texto {
+    /* border: 2px solid #4CAF50; Borde verde */
+    border-radius: 50px; /* Redondea los bordes y las esquinas */
+    padding:  5px 20px;
+    height: 80px;
+    /* max-width: 400px; */
+    min-width: 80px;
+    width: 0; /* Inicia con ancho cero */
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    direction: ltr; /* Cambia la dirección de texto de izquierda a derecha */
+    transition: width 2s ease, color 2s ease; /* Ajusta la duración de las transiciones */
+    background-color: #52D766; /* Fondo verde para el contenedor */
+    color: rgba(255, 255, 255, 0.3); /* Texto blanco opaco */
+    margin-right: 20px; /* Espacio entre el contenedor y el borde derecho */
+  }
 }
 
-  
