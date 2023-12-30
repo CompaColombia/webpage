@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <Link to='/' className='navbar-logo'>
+        <a href='/#Title' className='navbar-logo'>
           <img className='title-logo'
             alt='Compa logo'
             src='/images/compa negro.png'
@@ -35,11 +35,11 @@ function Navbar() {
             alt='Compa logo'
             src='/images/logo-small.png'
           />
-        </Link>
-        <div className='menu-section' onClick={() => setOpenMenu(!openMenu)}>
+        </a>
+        <div className='menu-section' style={ openMenu ? {'background': 'white'} : {'background': '#52D766'}} onClick={() => setOpenMenu(!openMenu)} >
           {openMenu ?
             <ul>
-              <li> <a href='#footer' > Productos y proyectos </a> </li>
+              <li> <a href='#Projects' > Productos y proyectos </a> </li>
               <li> <a href='#footer' > Servicios </a> </li>
               <li> <a href='#footer' > Contacto </a> </li>
             </ul> :

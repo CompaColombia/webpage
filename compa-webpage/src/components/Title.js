@@ -4,7 +4,7 @@ import Download from './Download'
 function Title() {
   
   return (
-    <div className='title' id='home'>
+    <div className='title' id='Title'>
       <p>
         <b>Desarrollamos soluciones tecnológicas para <br/>
         <span className='contenedor-texto' id='miContenedor'>Propagacion</span></b>

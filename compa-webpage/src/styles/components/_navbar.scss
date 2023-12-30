@@ -21,12 +21,19 @@ nav {
   align-items: center;
 }
 
+
 .menu-section {
-  background-color: #52D766;
+  // background-color: #52D766;
+  background-color: white;
+  box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.15);
   padding: 15px;
   border-radius: 25px;
 
-  ul {
+  &:hover {
+    cursor: pointer;
+  }
+
+    ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,16 +43,19 @@ nav {
 
   ul li {
     cursor: pointer;
-    margin: 0 20px;
+    margin: 0 30px;
   }
 
   a {
+    font-size: 0.9rem;
+    font-weight: bold;
     text-decoration: none;
     color: black;
   }
 
   ul li:hover {
-    text-decoration: underline;
+    text-decoration: underline #52D766;
+    text-decoration-thickness: 2.5px;
   }
 }
 
@@ -56,13 +66,13 @@ nav {
 .title-logo {
   display: block;
   height: 50px;
-  width: 230px;
+  width: 180px;
 }
 
 .title-logo-small {
   display: none;
   height: 50px;
-  width: 50px;
+  width: 56px;
 }
 
 // QUERY PARAM -----------------------------------------------
