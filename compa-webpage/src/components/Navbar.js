@@ -36,7 +36,7 @@ function Navbar() {
             src='/images/logo-small.png'
           />
         </Link>
-        <div className='menu-section' onClick={() => setOpenMenu(!openMenu)}>
+        <div className='menu-section' style={ openMenu ? {'background': 'white'} : {'background': 'blue'}} onClick={() => setOpenMenu(!openMenu)}>
           {openMenu ?
             <ul>
               <li> <a href='#footer' > Productos y proyectos </a> </li>
