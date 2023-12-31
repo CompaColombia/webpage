@@ -7,7 +7,7 @@ function Projects() {
   const items = [
     {
       "title": "Línea automatizada de siembra",
-      "image": "https://www.deere.com//assets/images/region-2/products/russia/planters/1755_r4g023090_block_large_295e642837ef7f436fb0c4c9c55854023352550a.jpg",
+      "image":"/images/compa negro.png",
       "text": "Descripción de la máquina "
     },
     {
@@ -28,10 +28,10 @@ function Projects() {
   ];
 
   return (
-    <section className="projects">
+    <section id='Projects' className="projects">
       <div className="top">
         <p><b>Nuestros productos <br />y proyectos</b></p>
-        <button>Ver todos</button>
+        <a href='/tech'>Ver todos</a>
       </div>
       <div className="bottom">
         <ul>

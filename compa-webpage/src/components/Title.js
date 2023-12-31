@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+
 
 function Title() {
 
   const [text, setText] = useState('')
-  const words = ['Hola Mundo', 'Adios Mundo', 'React es genial', 'Prueba CSSTransition'];
+  const words = ['Propagación', 'Riegos motorizados', 'Invernaderos automatizados', 'Maquinaria para viveros'];
 
   let index = 0;
 
@@ -15,14 +16,18 @@ function Title() {
   useEffect(() => {
     setInterval(() => {
       changeWord()
-    }, 2000)
+    }, 1000)
   }, [])
-
+  
   return (
-    <div className='title' id='home'>
+    <div className='title' id='Title'>
       <p>
-        <b>Desarrollamos soluciones tecnológicas para <br />
-          <span className='asd'>{text}</span>
+        <b>Desarrollamos soluciones tecnológicas para <br/>
+          <span className='contenedor-texto' id='miContenedor'>    
+            <p className='p-animated'>  
+              {text}
+            </p>     
+          </span>
         </b>
       </p>
       <div>
@@ -32,5 +37,7 @@ function Title() {
     </div>
   );
 }
+
+
 
 export default Title;

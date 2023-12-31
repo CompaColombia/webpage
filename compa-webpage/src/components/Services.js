@@ -13,7 +13,7 @@ function Services() {
     {
       "title": "Fabricación",
       "image": <TbTool color="rgb(82, 215, 102, 0.8)"/>,
-      "text": "Convertimos tus ideas en mecanismos o sistemas facilitando su visualización realista y detallada mediante prototipos renderizados en TRES-D. También puedes explorar nuevas opciones con las soluciones de nuestros aliados."
+      "text": "Convertimos tus ideas en mecanismos o sistemas facilitando su visualización realista y detallada mediante prototipos renderizados. También puedes explorar nuevas opciones con las soluciones de nuestros aliados."
     },
     {
       "title": "Ejecución",

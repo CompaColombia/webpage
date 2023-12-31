@@ -1,9 +1,10 @@
 .video {
+    width: 960px;
+    height: 690px;
+}
+.container-vid{
     border-radius: 15px;
-    background: grey;
-    width: 90%;
-    height: 800px;
     place-self: center;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
 }
