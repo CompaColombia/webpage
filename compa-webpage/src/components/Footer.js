@@ -11,10 +11,10 @@ function Footer() {
         </section>
         <section>
           <ul>
-            <li> <a href='#home' > Home </a> </li>
-            <li> <a href='#footer' > Proyectos </a> </li>
-            <li> <a href='#footer' > Servicios </a> </li>
-            <li> <a href='#footer' > Contacto </a> </li>
+            <li> <a href='/#Title' > Home </a> </li>
+            <li> <a href='#Projects' > Proyectos </a> </li>
+            <li> <a href='#Services' > Servicios </a> </li>
+            <li> <a href='#Contact' > Contacto </a> </li>
           </ul>
           <p><b>gestion@compa.com.co</b></p>
         </section>

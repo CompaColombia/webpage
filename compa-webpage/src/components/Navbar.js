@@ -40,8 +40,8 @@ function Navbar() {
           {openMenu ?
             <ul>
               <li> <a href='#Projects' > Productos y proyectos </a> </li>
-              <li> <a href='#footer' > Servicios </a> </li>
-              <li> <a href='#footer' > Contacto </a> </li>
+              <li> <a href='#Services' > Servicios </a> </li>
+              <li> <a href='#Contact' > Contacto </a> </li>
             </ul> :
             <AiOutlineMenu className='AiOutlineMenu' />
           }

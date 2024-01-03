@@ -28,7 +28,7 @@ function Services() {
   ];
 
   return (
-    <section className="services">
+    <section id='Services' className="services">
       <div className="top">
         <h2>Nuestros servicios</h2>
         <p>Ayudamos a nuestros clientes a explorar a través de diferentes facilidades para desarrollar u ofrecer el mejor sistema o concepto según sea identificado.</p>
