@@ -6,24 +6,24 @@ function Projects() {
 
   const items = [
     {
-      "title": "Línea automatizada de siembra",
-      "image":"/images/compa negro.png",
-      "text": "Descripción de la máquina "
+      "title": "Línea de siembra",
+      "image":"/images/IMG_1620.JPG",
+      "text": "Descubra la revolución en propagación con las líneas de siembra y múltiples módulos adaptados a las necesidades de cada cliente, garantizamos una siembra precisa y eficiente."
     },
     {
       "title": "Mezcladora Sustrato",
-      "image": "https://autoagromachines.com/wp-content/uploads/2023/01/autonomous-agro-machines-iplantforest-forestbot-forest-bot-img876886871-1.jpg",
-      "text": "Descripción de la máquina "
+      "image": "/images/IMG_1319.JPG",
+      "text": "Simplifique su proceso de mezcla y precise los componentes para su plantulación con nuestra máquina mezcladora."
     },
     {
       "title": "Invernaderos de alta tecnología",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Volante_Farms_greenhouse.jpg/1200px-Volante_Farms_greenhouse.jpg",
-      "text": "Descripción de la máquina "
+      "image": "/images/IMG_4436.PNG",
+      "text": "Garantice un entorno ideal para el crecimiento de sus cultivos con el monitoreo y control de variables ambientales."
     },
     {
-      "title": "Sistemas de riego automatizados",
-      "image": "https://autoagromachines.com/wp-content/uploads/2023/01/autonomous-agro-machines-iplantforest-forestbot-forest-bot-img876886871-1.jpg",
-      "text": "Descripción de la máquina "
+      "title": "Sistemas de riego móviles",
+      "image": "/images/IMG_4441.JPG",
+      "text": "Logre una irrigación uniforme sobre su cultivo con la movilidad y autonomía de nuestro solución innovadora para invernaderos"
     },
   ];
 
@@ -36,9 +36,9 @@ function Projects() {
       <div className="bottom">
         <ul>
           {items?.map((item, key) => (
-            <li onClick={() => setItemSelected(key)} key={key}>
+            <li onClick={() => setItemSelected(key)} key={key}>             
               <p className="machine-title" style={key === itemSelected ? {"color": "black"} : {"color": "lightgrey"}}>{item.title}</p>
-              {key === itemSelected ? <p>{item.text}</p> : "" }
+              {key === itemSelected ? <p className="machine-desc">{item.text}</p> : "" }
             </li>
           ))}
         </ul>

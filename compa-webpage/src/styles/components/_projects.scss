@@ -54,14 +54,21 @@
     ul {
       box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
       background-color: white;
-      transform: translate(200px, 0);;
+      transform: translate(280px, 0);;
       right: 20px;
       border-radius: 15px;
       padding: 60px;
-      width: 90%;
+      width: 60%;
 
       .machine-title {
-        font-size: 30px;
+        font-size: 35px;
+      }
+
+      .machine-desc {
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 30px
       }
 
       li {
@@ -71,7 +78,7 @@
     }
 
     .images-section {
-      width: 130%;
+      width: 120%;
       height: 100vh;
       
       img {
