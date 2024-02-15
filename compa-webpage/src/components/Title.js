@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 function Title() {
 
   const [text, setText] = useState('')
-  const words = ['Propagación', 'Riegos motorizados', 'Invernaderos automatizados', 'Maquinaria para viveros'];
+  const words = ['Líneas de propagación', 'Maquinaria para sustratos','Riegos motorizados', 'Invernaderos automatizados', 'Maquinaria para viveros' ];
 
   let index = 0;
 

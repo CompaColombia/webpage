@@ -2,7 +2,8 @@
 .DS_store
 
 # Ignora la carpeta node_modules
-node_modules
+node_modules 
+build
 
 # Ignora todos los archivos de texto
 *.txt
