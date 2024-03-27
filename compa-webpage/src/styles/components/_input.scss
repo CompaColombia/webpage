@@ -1,0 +1,29 @@
+.input, .textarea {
+    border-radius: 25px;
+    padding: 25px 40px;
+    margin: 1%;
+    border: none;
+    box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    width: 48%;
+    font-size: large;
+
+    &::placeholder {
+        /* Firefox */
+        color: lightgray;
+        opacity: 1;
+    }
+
+    &::-ms-input-placeholder {
+        /* Edge 12-18 */
+        color: lightgray;
+    }
+}
+
+.textarea {
+    width: 99%;
+    height: 20vh;
+}
+
+.input {
+    width: 48%;
+}

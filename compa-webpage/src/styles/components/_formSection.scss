@@ -1,0 +1,19 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 3%;
+    border-top: 2px solid black;
+
+    .form-title {
+        font-size: 40px;
+        place-self: flex-start;
+        margin-left: 2%;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+}

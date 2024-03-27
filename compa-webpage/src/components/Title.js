@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 
 
-function Title() {
+function Title({titleText, words = false, extraText = false}) {
 
   const [text, setText] = useState('')
-  const words = ['Propagación', 'Riegos motorizados', 'Invernaderos automatizados', 'Maquinaria para viveros'];
 
   let index = 0;
 
@@ -14,26 +13,25 @@ function Title() {
   }
 
   useEffect(() => {
-    setInterval(() => {
-      changeWord()
-    }, 1000)
+    if (words) {
+      setInterval(() => {
+        changeWord()
+      }, 1000)
+    }
   }, [])
   
   return (
     <div className='title' id='Title'>
       <p>
-        <b>Desarrollamos soluciones tecnológicas para <br/>
-          <span className='contenedor-texto' id='miContenedor'>    
+        <b>{titleText}<br/>
+          {words ? <span className='contenedor-texto' id='miContenedor'>    
             <p className='p-animated'>  
               {text}
             </p>     
-          </span>
+          </span> : ''}
         </b>
       </p>
-      <div>
-        <h1>Sé <span>Compa</span> del campo</h1>
-        {/* <Download /> */}
-      </div>
+      {extraText ? extraText : ''}
     </div>
   );
 }

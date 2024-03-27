@@ -1,0 +1,15 @@
+.contactpage {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 244, 244);
+    height: auto;
+    width: 100%;
+
+    .form-prev-msg {
+        font-size: 40px;
+        width: 30%;
+        text-align: start;
+        margin-right: 12%;
+        margin-left: auto;
+    }
+}

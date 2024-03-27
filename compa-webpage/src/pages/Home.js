@@ -10,7 +10,15 @@ import VideoSection from '../components/VideoSection';
 function Home() {
   return (
     <div className='home'>
-      <Title />
+      <Title
+        titleText={'Desarrollamos soluciones tecnológicas para '}
+        words={['Propagación', 'Riegos motorizados', 'Invernaderos automatizados', 'Maquinaria para viveros']}
+        extraText={
+          <div>
+            <h1>Sé <span>Compa</span> del campo</h1>
+          </div>
+        }
+      />
       <VideoSection />
       <AboutUs />
       <Projects />
