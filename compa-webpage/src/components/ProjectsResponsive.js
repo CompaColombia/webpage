@@ -1,8 +1,7 @@
 import { useState } from "react";
+import CarouselProjects from "./CarouselProjects";
 
 export default function ProjectsResponsive() {
-
-  const [itemSelected, setItemSelected] = useState(0)
 
   const items = [
     {
@@ -31,22 +30,12 @@ export default function ProjectsResponsive() {
     <section id='ProjectsResponsive' className="projectsResponsive">
       
       <div className="top">
-        <h2>Nuestros productos y proyectos res</h2>
+        <h2>Nuestros productos y proyectos</h2>
         <div><a href='/tech'>Ver todos</a></div>
       </div>
 
       <div className="bottom">
-        <ul>
-          {items?.map((item, key) => (
-            <li onClick={() => setItemSelected(key)} key={key}>             
-              <p className="machine-title" style={key === itemSelected ? {"color": "black"} : {"color": "lightgrey"}}>{item.title}</p>
-              {key === itemSelected ? <p className="machine-desc">{item.text}</p> : "" }
-            </li>
-          ))}
-        </ul>
-        <div className="images-section">
-          <img src={items[itemSelected].image}></img>
-        </div>
+        <CarouselProjects items={items}/> 
       </div>
     </section>
   );

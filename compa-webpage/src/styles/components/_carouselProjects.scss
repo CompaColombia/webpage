@@ -1,0 +1,53 @@
+.custom-scroll {
+    width: 100%;
+    overflow: auto;
+    scroll-snap-align: start;
+    scroll-snap-type: x proximity;
+
+    &::-webkit-scrollbar {
+        height: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 15px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        background: lightgrey;
+        border-radius: 15px;
+    }
+
+    &::-webkit-scrollbar-button:end:increment {
+        width: 40%;
+        display: block;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-button:start:decrement {
+        width: 40%;
+        display: block;
+        background: transparent;
+    }
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    height: 600px;
+}
+
+.carousel-item {
+    border-radius: 15px;
+    flex: 0 0 auto;
+    width: 80%;
+    background: white;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
