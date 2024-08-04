@@ -4,24 +4,34 @@ import Allies from '../components/Allies';
 import Contact from '../components/Contact';
 import Services from '../components/Services';
 import Projects from '../components/Projects';
+import ProjectsResponsive from '../components/ProjectsResponsive';
 import AboutUs from '../components/AboutUs';
 import VideoSection from '../components/VideoSection';
 
 function Home() {
+  
+  const longText = 'Desarrollamos soluciones tecnológicas para '
+  const shortText = 'Desarrollamos tecnología para ';
+
+  const longWordsArray = ['Propagación', 'Riegos motorizados', 'Invernaderos automatizados', 'Maquinaria para viveros']
+  const shortWordsArray = ['Propagación', 'Viveros', 'Plantulación', 'Riego', 'Invernaderos', 'Sustratos'];
+
+  const width = window.outerWidth;
+
+  const titleText = width < 800 ? shortText : longText;
+  const wordsArray = width < 800 ? shortWordsArray : longWordsArray;
+  const projectSection = width < 800 ? <ProjectsResponsive /> : <Projects />;
+
   return (
     <div className='home'>
       <Title
-        titleText={'Desarrollamos soluciones tecnológicas para '}
-        words={['Propagación', 'Riegos motorizados', 'Invernaderos automatizados', 'Maquinaria para viveros']}
-        extraText={
-          <div>
-            <h1>Sé <span>Compa</span> del campo</h1>
-          </div>
-        }
+        titleText={titleText}
+        words={wordsArray}
+        extraText={<h1>Sé <span className='underlined'>Compa</span> del campo</h1>}
       />
       <VideoSection />
       <AboutUs />
-      <Projects />
+      {projectSection}
       <Services />
       <p className='home-text'>Tecnificamos el presente para <span>cultivar</span> un futuro eficiente</p>
       <Allies />

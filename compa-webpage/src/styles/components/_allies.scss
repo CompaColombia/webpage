@@ -1,18 +1,37 @@
 .allies {
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #52D766;
   text-align: center;
+  background-color: #52D766;
+  padding-top: 7vh;
+  border-radius: 0 200px 0 0;
 
-  h3 {
-    font-size: 60px;
+  h2 {
+    font-size: 80px;
+    color: white;
   }
 
   p {
     width: 55%;
+    padding-bottom: 7vh;
     font-size: 25px;
     color: white;
+  }
+}
+
+// QUERY PARAMS
+
+@media screen and (max-width: 800px) {
+  .allies {
+    border-radius: 0 50px 0 0;
+    padding-top: 3vh;
+    h2 {
+      font-size: 40px
+    }
+    p {
+      width: 100%;
+      padding: 5%;
+    }
   }
 }

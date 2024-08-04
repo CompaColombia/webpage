@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Projects() {
+export default function ProjectsResponsive() {
 
   const [itemSelected, setItemSelected] = useState(0)
 
@@ -28,10 +28,10 @@ function Projects() {
   ];
 
   return (
-    <section id='Projects' className="projects">
+    <section id='ProjectsResponsive' className="projectsResponsive">
       
       <div className="top">
-        <h2>Nuestros productos y proyectos</h2>
+        <h2>Nuestros productos y proyectos res</h2>
         <div><a href='/tech'>Ver todos</a></div>
       </div>
 
@@ -51,5 +51,3 @@ function Projects() {
     </section>
   );
 }
-
-export default Projects;

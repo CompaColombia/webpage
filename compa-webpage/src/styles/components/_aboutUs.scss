@@ -4,20 +4,20 @@
   justify-content: center;
   align-items: center;
   margin: 0 12%;
-  margin-bottom: 150px;
-  
+  margin-bottom: 15vh;
+
   .top {
     display: flex;
     flex-direction: row;
     text-align: right;
     justify-content: space-between;
     align-items: center;
-    
+    margin-bottom: 7vh;
+
     h2 {
       font-size: 80px;
       width: 30%;
       text-align: start;
-      line-height: 90px;
     }
 
     p {
@@ -25,11 +25,10 @@
       text-align: justify;
       font-size: 25px;
     }
-  
+
   }
 
   button {
-    margin-top: 60px;
     box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     font-size: 20px;
     color: black;
@@ -45,6 +44,33 @@
       cursor: pointer;
     }
   }
+}
 
 
+// QUERY PARAMS
+
+@media screen and (max-width: 800px) {
+  .aboutUs {
+    margin: 0 5%;
+    margin-bottom: 15vh;
+
+    .top {
+      flex-direction: column;
+
+      h2 {
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 7vh;
+      }
+
+      p {
+        width: 100%;
+      }
+
+    }
+    button {
+      font-size: 30px;
+    }
+  }
 }

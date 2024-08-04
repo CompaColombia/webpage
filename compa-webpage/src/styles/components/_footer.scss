@@ -1,25 +1,20 @@
 .footer-container {
   background-color: black;
-  padding: 2rem 0 2rem 0;
-
-  p {
-    color: white;
-  }
+  padding: 5% 12%;
+  color: white;
 }
 
-.footer-textarea {
+.footer-texts {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 200px);
-  height: 100px;
-  margin: 0 100px;
+  width: 100%;
 
-  section {
+  div {
     display: flex;
     flex-direction: column;
-    height: 50px;
+    height: 50%;
     justify-content: space-between;
   
     ul {
@@ -29,14 +24,24 @@
     }
   
     a {
-      margin-right: 20px;
-      color: rgb(211, 208, 208);
+      margin-right: 10px;
+      color: rgb(228, 228, 228);
       text-decoration: none;
   
       &:hover {
         text-decoration: underline;
   
       }
+    }
+  }
+}
+
+// QUERY PARAMS
+
+@media screen and (max-width: 800px) {
+  .footer-container {
+    .footer-texts {
+      flex-direction: column;
     }
   }
 }

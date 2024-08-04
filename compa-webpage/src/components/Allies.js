@@ -29,7 +29,7 @@ function Allies() {
 
   return (
     <div className="allies">
-      <h3>Los compas de compa</h3>
+      <h2>Los compas de compa</h2>
       <p>Sabemos que para llegar lejos debemos estar acompañados de los mejores, te presentamos a nuestros aliados y clientes.</p>
       <Carousel items={items}/>
     </div>

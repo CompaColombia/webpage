@@ -1,15 +1,15 @@
 function Footer() {
   return (
-    <div className='footer-container' id='footer'>
-      <section className='footer-textarea'>
-        <section>
+    <section className='footer-container' id='footer'>
+      <div className='footer-texts'>
+        <div>
           <p><b>J COMPA COLOMBIA SAS</b></p>
           <ul>
             <li> <a href='https://www.instagram.com' target="_blank"> Instagram. </a> </li>
             <li> <a href='https://www.linkedin.com' target="_blank"> Linkedin. </a> </li>
           </ul>
-        </section>
-        <section>
+        </div>
+        <div>
           <ul>
             <li> <a href='/#Title' > Home </a> </li>
             <li> <a href='#Projects' > Proyectos </a> </li>
@@ -17,9 +17,9 @@ function Footer() {
             <li> <a href='#Contact' > Contacto </a> </li>
           </ul>
           <p><b>gestion@compa.com.co</b></p>
-        </section>
-      </section>
-    </div>
+        </div>
+      </div>
+    </section>
   );
 }
 

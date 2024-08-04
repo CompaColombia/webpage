@@ -36,7 +36,7 @@ function Services() {
       <div className="cards">
         {items?.map((item, key) => (
           <div key={key} className="card">
-            <h2>{item.title}</h2>
+            <h3>{item.title}</h3>
             <div>{item.image}</div>
             <p>{item.text}</p>
           </div>

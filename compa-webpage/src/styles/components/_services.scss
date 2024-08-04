@@ -3,21 +3,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 12%;
-  // margin-bottom: 10px;
-
+  margin-bottom: 15vh;
+  
   .top {
+    margin: 0 12%;
     display: flex;
     flex-direction: row;
     text-align: right;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 7vh;
     
     h2 {
       font-size: 80px;
       width: 30%;
       text-align: start;
-      line-height: 90px;
     }
 
     p {
@@ -42,9 +42,8 @@
       justify-content: start;
       align-items: center;
 
-      height: 100%;
-      height: 410px;
-      padding: 4% 4%;
+      height: 40vh;
+      padding: 2%;
       text-align: center;
 
       // border: #52D766 2px solid;
@@ -53,9 +52,9 @@
       flex: 0 0 auto;
       width: 20vw;
       background: white;
-      margin: 20px;
+      margin: 2%;
 
-      h2 {
+      h3 {
         // color: rgb(82, 215, 102, 0.1);
         margin-bottom: 10%;
       }
@@ -71,4 +70,38 @@
     }
   }
 
+}
+
+// QUERY PARAMS
+
+@media screen and (max-width: 800px) {
+  .services {
+    margin: 0 5%;
+    margin-bottom: 15vh;
+
+    .top {
+      flex-direction: column;
+
+      h2 {
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 7vh;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .cards {
+      flex-direction: column;
+
+      .card {
+        width: 80vw;
+        padding: 10%;
+        // height: 3vh;
+      }
+    }
+  }
 }

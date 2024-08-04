@@ -21,41 +21,43 @@ nav {
   align-items: center;
 }
 
-
 .menu-section {
-  // background-color: #52D766;
-  background-color: white;
   box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.15);
   padding: 15px;
   border-radius: 25px;
-
+  
   &:hover {
     cursor: pointer;
   }
-
-    ul {
+  
+  ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: auto;
+    justify-content: space-around;
+    flex-wrap: nowrap;
     transition: transform .2s;
+    padding: 0;
+    list-style: none;
+    width: 450px;
+
+    li {
+      cursor: pointer;    
+      margin: 0 14;
+
+      &:hover {
+        text-decoration: underline #52D766;
+        text-decoration-thickness: 2.5px;
+      }
+    }
   }
 
-  ul li {
-    cursor: pointer;
-    margin: 0 30px;
-  }
 
   a {
     font-size: 0.9rem;
     font-weight: bold;
     text-decoration: none;
     color: black;
-  }
-
-  ul li:hover {
-    text-decoration: underline #52D766;
-    text-decoration-thickness: 2.5px;
   }
 }
 
@@ -75,7 +77,6 @@ nav {
   width: 56px;
 }
 
-// QUERY PARAM -----------------------------------------------
 
 html:not([data-scroll='0']) {
   .menu-section {
@@ -91,4 +92,14 @@ html:not([data-scroll='0']) {
   .title-logo-small {
     display: block;
   }
+}
+
+// QUERY PARAM -----------------------------------------------
+
+@media screen and (max-width: 800px) {
+  .menu-section ul {
+    flex-direction: column;
+  }
+
+
 }

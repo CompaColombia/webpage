@@ -1,11 +1,20 @@
-.video {
-    width: 960px;
-    height: 690px;
-}
-.container-vid{
-    background-color: grey;
-    border-radius: 15px;
+.video{
+    width: 80vw;
+    height: 70vh;
     place-self: center;
     text-align: center;
-    margin-bottom: 110px;
+    margin-bottom: 20vh;
+    border-radius: 15px;
+    width: 80vw;
+    height: 80vh;
+}
+
+// QUERY PARAMS
+
+@media screen and (max-width: 800px) {
+    .video {
+        width: 90vw;
+        height: 30vh;
+        margin-bottom: 15vh;
+    }
 }

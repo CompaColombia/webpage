@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const storeScroll = () => {
     document.documentElement.dataset.scroll = window.scrollY;
@@ -39,6 +38,7 @@ function Navbar() {
         <div className='menu-section' style={ openMenu ? {'background': 'white'} : {'background': '#52D766'}} onClick={() => setOpenMenu(!openMenu)} >
           {openMenu ?
             <ul>
+              <li> <a href='/#Title' > Inicio </a> </li>
               <li> <a href='#Projects' > Productos y proyectos </a> </li>
               <li> <a href='#Services' > Servicios </a> </li>
               <li> <a href='#Contact' > Contacto </a> </li>
