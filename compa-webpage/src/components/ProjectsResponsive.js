@@ -16,7 +16,7 @@ export default function ProjectsResponsive() {
     },
     {
       "title": "Invernaderos de alta tecnología",
-      "image": "/images/IMG_4436.png",
+      "image": "/images/IMG_4436.jpg",
       "text": "Garantice un entorno ideal para el crecimiento de sus cultivos con el monitoreo y control de variables ambientales."
     },
     {

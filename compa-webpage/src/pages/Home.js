@@ -20,7 +20,7 @@ function Home() {
 
   const titleText = width < 800 ? shortText : longText;
   const wordsArray = width < 800 ? shortWordsArray : longWordsArray;
-  const projectSection = true ? <ProjectsResponsive /> : <Projects />;
+  const projectSection = width < 800 ? <ProjectsResponsive /> : <Projects />;
 
   return (
     <div className='home'>
