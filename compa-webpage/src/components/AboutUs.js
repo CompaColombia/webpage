@@ -12,7 +12,7 @@ function AboutUs() {
           procesos adaptados a sus necesidades.
         </p>
       </div>
-      <button>Descubre más</button>
+      <button onClick={() => window.open('https://linktr.ee/compa.colombia', "_blank")}>Descubre más</button>
     </section>
   );
 }

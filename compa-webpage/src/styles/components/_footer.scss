@@ -42,6 +42,12 @@
   .footer-container {
     .footer-texts {
       flex-direction: column;
+      align-items: flex-start;
+
+      div {
+        margin: 10px
+      }
+      margin-bottom: 20px;
     }
   }
 }

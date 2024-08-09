@@ -4,34 +4,28 @@ function Allies() {
 
   const array = [
     {
-      img: 'arroyave.png',
+      img: 'allies/arroyave.png',
       link: 'https://semillasarroyave.com/'
     },
     {
-      img: 'ball.png',
+      img: 'allies/ball.png',
       link: 'https://ballsb.com/es/nosotros'
     },
     {
-      img: 'fee.png',
-      link: 'https://www.feecolombia.org/'
-    },
-    {
-      img: 'rioplant.jpeg',
-      link: 'https://rioplant.com/'
-    },
-    {
-      img: 'saenzfety.png',
+      img: 'allies/saenzfety.png',
       link: 'https://saenzfety.com/'
     },
+    {
+      img: 'allies/fee.png',
+      link: 'https://www.feecolombia.org/'
+    },
   ]
-
-  const items = [1, 2, 3, 4, 5];
 
   return (
     <div className="allies">
       <h2>Los compas de compa</h2>
       <p>Sabemos que para llegar lejos debemos estar acompañados de los mejores, te presentamos a nuestros aliados y clientes.</p>
-      <Carousel items={items}/>
+      <Carousel items={array}/>
     </div>
   );
 }

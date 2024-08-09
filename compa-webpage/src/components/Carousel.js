@@ -1,14 +1,18 @@
-function Carousel({items}) {
+export default function Carousel({ items }) {
 
-  return (
-    <div className="custom-scroll">
-      <div className="carrusel">
-        {items?.map(item => (
-          <div key={item} className="carrusel-item"></div>
-        ))}
-      </div>
-    </div>
-  );
+  function openLink(link) {
+    window.open(link, "_blank");
 }
 
-export default Carousel;
+return (
+  <div className="custom-scroll">
+    <div className="carrusel">
+      {items?.map(item => (
+        <div key={item} className="carrusel-item">
+          <img src={item.img} style={{ height: '160px', padding: '30px' }} onClick={() => openLink(item.link)} />
+        </div>
+      ))}
+    </div>
+  </div>
+);
+}
