@@ -5,8 +5,8 @@ function Footer() {
         <div>
           <p><b>J COMPA COLOMBIA SAS</b></p>
           <ul>
-            <li> <a href='https://www.instagram.com/compa.colombia/' target="_blank"> Instagram. </a> </li>
-            <li> <a href='https://www.linkedin.com' target="_blank"> Linkedin. </a> </li>
+            <li> <a href='https://www.instagram.com/compa.colombia/' target="_blank"> Instagram </a> </li>
+            <li> <a href='https://www.linkedin.com/company/compacolombia/' target="_blank"> Linkedin </a> </li>
           </ul>
         </div>
         <div>

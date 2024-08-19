@@ -27,7 +27,7 @@ export default function ProjectsResponsive() {
   ];
 
   return (
-    <section id='ProjectsResponsive' className="projectsResponsive">
+    <section id='Projects' className="projectsResponsive">
       
       <div className="top">
         <h2>Nuestros productos y proyectos</h2>

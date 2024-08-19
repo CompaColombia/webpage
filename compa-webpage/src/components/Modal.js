@@ -6,9 +6,9 @@ const Modal = ({ isOpen, onClose, children }) => {
     return (
         <div className="modal">
             <div className="modal-content">
-                <button className="modal-close" onClick={onClose}>
+                {/* <button className="modal-close" onClick={onClose}>
                     Cerrar
-                </button>
+                </button> */}
                 {children}
             </div>
         </div>

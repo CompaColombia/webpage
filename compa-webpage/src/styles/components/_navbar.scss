@@ -1,4 +1,4 @@
-nav {
+.navbar {
   background: 0 0;
   height: 100px;
   display: flex;
@@ -12,7 +12,7 @@ nav {
   margin: 0 50px;
 }
 
-.navbar-logo {
+.logo-section {
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -21,15 +21,41 @@ nav {
   align-items: center;
 }
 
+.title-logo {
+  display: block;
+  height: 50px;
+  width: 180px;
+}
+
+.title-logo-small {
+  display: none;
+  height: 50px;
+  width: 56px;
+}
+
+
+html:not([data-scroll='0']) {
+  .title-logo {
+    display: none;
+  }
+
+  .title-logo-small {
+    display: block;
+  }
+}
+
+
+// menu section -----------------------------------------------
+
 .menu-section {
   box-shadow: 0 20px 25px -3px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.15);
   padding: 15px;
   border-radius: 25px;
-  
+
   &:hover {
     cursor: pointer;
   }
-  
+
   ul {
     display: flex;
     flex-direction: row;
@@ -42,7 +68,7 @@ nav {
     width: 450px;
 
     li {
-      cursor: pointer;    
+      cursor: pointer;
       margin: 0 14;
 
       &:hover {
@@ -65,41 +91,21 @@ nav {
   display: block;
 }
 
-.title-logo {
-  display: block;
-  height: 50px;
-  width: 180px;
-}
-
-.title-logo-small {
-  display: none;
-  height: 50px;
-  width: 56px;
-}
-
-
-html:not([data-scroll='0']) {
-  .menu-section {
-    border-radius: 100px;
-    cursor: pointer;
-    padding: 15px;
-  }
-
-  .title-logo {
-    display: none;
-  }
-
-  .title-logo-small {
-    display: block;
-  }
-}
-
 // QUERY PARAM -----------------------------------------------
 
 @media screen and (max-width: 800px) {
   .menu-section ul {
     flex-direction: column;
+    width: inherit;
+
+    li {
+      margin-bottom: 20px;
+      a {
+        font-size: 30px;
+      }
+    }
   }
+
 
 
 }
