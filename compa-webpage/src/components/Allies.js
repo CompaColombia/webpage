@@ -4,6 +4,11 @@ function Allies() {
 
   const array = [
     {
+      img: 'allies/elite.png',
+      link: 'https://eliteflower.com/'
+    },
+
+    {
       img: 'allies/arroyave.png',
       link: 'https://semillasarroyave.com/'
     },
