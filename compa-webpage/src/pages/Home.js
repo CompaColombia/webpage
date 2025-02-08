@@ -29,7 +29,7 @@ function Home() {
         words={wordsArray}
         extraText={<h1>Sé <span className='underlined'>Compa</span> del campo</h1>}
       />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <AboutUs />
       {projectSection}
       <Services />

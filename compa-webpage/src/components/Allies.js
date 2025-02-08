@@ -16,8 +16,8 @@ function Allies() {
       link: 'https://saenzfety.com/'
     },
     {
-      img: 'allies/fee.png',
-      link: 'https://www.feecolombia.org/'
+      img: 'allies/eliteflowers.jpg',
+      link: 'https://eliteflower.com/'
     },
   ]
 

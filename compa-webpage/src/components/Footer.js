@@ -7,6 +7,7 @@ function Footer() {
           <ul>
             <li> <a href='https://www.instagram.com/compa.colombia/' target="_blank"> Instagram </a> </li>
             <li> <a href='https://www.linkedin.com/company/compacolombia/' target="_blank"> Linkedin </a> </li>
+            <li> <a href='/compa2024' target="_blank"> Linkedin </a> </li>
           </ul>
         </div>
         <div>

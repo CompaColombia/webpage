@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CarouselProjects from "./CarouselProjects";
+import compa2024 from "../compa2024.pdf"
 
 export default function ProjectsResponsive() {
 
@@ -31,7 +32,7 @@ export default function ProjectsResponsive() {
       
       <div className="top">
         <h2>Nuestros productos y proyectos</h2>
-        <div><a href='/tech'>Ver todos</a></div>
+        <div><a onClick={() => window.open(compa2024, "_blank")}>Ver todos</a></div>
       </div>
 
       <div className="bottom">
