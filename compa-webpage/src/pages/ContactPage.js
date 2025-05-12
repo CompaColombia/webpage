@@ -7,7 +7,6 @@ import { useState } from 'react';
 export default function ContactPage() {
 
   const [data, setData] = useState({name: 'Default', phone: '', email: '', description: ''})
-  console.log('data', data)
   
   const onChange = (name, value) => {
     console.log(data.name)

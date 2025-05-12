@@ -22,7 +22,6 @@ function menuOptions(responsive = false) {
 export default function Navbar() {
   const width = window.outerWidth;
   const [openMenu, setOpenMenu] = useState(false);
-
   const storeScroll = () => {
     document.documentElement.dataset.scroll = window.scrollY;
   };
