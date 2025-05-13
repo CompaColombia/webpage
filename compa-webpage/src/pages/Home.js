@@ -32,7 +32,7 @@ function Home() {
       <VideoSection />
       <AboutUs />
       {projectSection}
-      <Services />
+      {/*<Services />*/}
       <p className='home-text'>Tecnificamos el presente para <span>cultivar</span> un futuro eficiente</p>
       <Allies />
       <Contact />
